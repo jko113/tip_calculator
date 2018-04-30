@@ -9,9 +9,9 @@ def calculate():
         break
 
     levels = {
-        'good': 20.,
-        'fair': 15.,
-        'bad': 10.
+        'good': .2,
+        'fair': .15,
+        'bad': .1
     }
 
     while True:
@@ -31,7 +31,7 @@ def calculate():
             continue
         break
 
-    tip = bill * (levels[service_quality] / 100)
+    tip = bill * (levels[service_quality])
     total = bill + tip
 
     print("Tip amount: $%.2f" % tip)
